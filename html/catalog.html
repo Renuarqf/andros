@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Catalog</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="yandex-tableau-widget" href="images/favicons/yandex-browser-manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="svg-store">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="right-arrow" viewBox="0 0 500 500">
+          <path d="M373,127l123,123L373,373l-11.2-11.4l103.4-103.4H4v-16.4h461.2L361.8,138.4L373,127z"></path>
+        </symbol>
+        <symbol id="down-arrow" viewBox="0 0 500 500">
+          <path d="M491,250L250,491L9,250l22.4-21.9l202.5,202.5V9l32.1,0v421.6l202.5-202.5L491,250z"></path>
+        </symbol>
+        <symbol id="preloader-icon" viewBox="0 0 500 500">
+          <path d="M449,55v47C403.3,40.7,330.1,1.2,247.6,2C111.8,3.3,1.8,114.7,2,250.4C2.2,387.2,113.2,498,250,498			c84.4,0,158.9-42.2,203.7-106.5l-15-10.6C397.5,439.6,329.2,478,252,478C126.2,478,24.2,376.1,24,250.4			C23.8,125.8,124.7,23.5,249.3,22c75.6-0.9,142.9,35.1,185,91H391v17h58h0.6c0.9,0.1,1.9,0.1,2.8,0h6.3c4,0,7.3-3.3,7.3-7.3V113V55			H449z"></path>
+        </symbol>
+      </svg>
+    </div>
+    <div class="preloader" style="position:fixed; top:0; left:0; right:0; bottom:0; background:#fff; z-index:500;">
+      <div class="preloader__icon">
+        <!--img( src="images/content/icons/preloader.svg" alt="")-->
+        <svg class="icon">
+          <use xlink:href="#preloader-icon"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="layout">
+      <header class="header">
+        <div class="container container-lg">
+          <div class="header-inner"><a class="logo" href="index.html"><img src="images/logo.png" alt="logo"></a><a class="menu-toggle" href="#menu">
+              <div class="mline top"></div>
+              <div class="mline mid"></div>
+              <div class="mline bot"></div></a>
+            <div class="slide-header">
+              <div class="menu-block">
+                <ul class="menu">
+                  <li><a href="about.html">О компании</a></li>
+                  <li><a href="catalog.html">Наши продукты</a>
+                    <ul>
+                      <li><a href="catalog.html#juice">Соки</a></li>
+                      <li><a href="catalog.html#dessert">Десерты</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Andros Restauration</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+              </div>
+              <!--menu-block-->
+              <ul class="header-contacts">
+                <li><a href="tel:8 (903) 537 62 86">8 (903) 537 62 86</a></li>
+                <li class="mobile-hide"><a href="mailto:sales@androsfoods.com">sales@androsfoods.com</a></li>
+                <li class="mobile-hide"><a href="#">Написать нам</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--header-inner-->
+        </div>
+        <!--container-->
+      </header>
+      <!--header-->
+      <main class="main">
+        <section class="section-default">
+          <div class="container">
+            <div class="section__title">Наши продукты</div>
+            <ul class="tab-list">
+              <li><a class="tab-link active" href="#" data-filter="all">Все продукты</a></li>
+              <li><a class="tab-link" href="#" data-filter="juice">Соки</a></li>
+              <li><a class="tab-link" href="#" data-filter="dessert">Десерты</a></li>
+            </ul>
+            <div class="green-separator"></div>
+            <div class="catalog-block">
+              <div class="catalog-description">
+                <div class="catalog-info visible" data-category="all">
+                  <div class="fx-row">
+                    <div class="fx-col fx-col-6">
+                      <div class="catalog-slogan">Попробуйте уникальные соки и десерты из фруктов, выращенных во Франции. Для изготовления нашей продукции мы отбираем только самые свежие и вкусные плоды.</div>
+                    </div>
+                    <div class="fx-col fx-col-6">
+                      <div class="catalog-text">
+                        <p>Наши рецепты разрабатывались и улучшались более 100 лет, поэтому вы можете быть уверены в качестве и эксклюзивности продукции Андрос. Знакомый с детства вкус спелых яблок или экзотический аромат манго? Мы порадуем вас множеством различных сочетаний. Наши соки и десерты 100% натуральные и не содержат красителей, искусственных ароматизаторов и консервантов!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-info" data-category="juice">
+                  <div class="fx-row">
+                    <div class="fx-col fx-col-6">
+                      <div class="catalog-slogan">Соки Андрос - это уникальное сочетание традиционных рецептов и самых спелых и свежих фруктов прямиком из Франции.</div>
+                    </div>
+                    <div class="fx-col fx-col-6">
+                      <div class="catalog-text">
+                        <p>В отличие от многих марок, мы не используем разведённый концентрированный сок и не добавляем сахар. Все соки изготовлены на заводах региона Биарс во Франции из фруктов, выращенных на наших собственных плантациях. Все ингредиенты проходят строжайший контроль качества, поэтому вы можете быть уверены, что, покупая соки Андрос, вы и ваша семья насладитесь прекрасным натуральным вкусом и зарядом витаминов.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-info" data-category="dessert">
+                  <div class="fx-row">
+                    <div class="fx-col fx-col-6">
+                      <div class="catalog-slogan">Фруктовые кусочки от Андрос - это инновационный натуральный десерт, изготовленный только из спелых фруктов с  наших французских плантаций.</div>
+                    </div>
+                    <div class="fx-col fx-col-6">
+                      <div class="catalog-text">
+                        <p>Предпочитаете натуральный вкус, но не можете отказать себе в десерте? С Андрос вам не придётся выбирать! Наши фруктовые кусочки полностью натуральны и выпускаются в двух версиях: без сахара и с небольшим содержанием сахара. Восемь различных вкусов не оставят никого равнодушным и станут идеальным перекусом для детей и взрослых.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-items">
+                <ul class="item-list">
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-1.png)"></div>
+                      </div>
+                      <div class="item__name">Сок апельсиновый</div>
+                      <div class="item__value">1,5 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-2.png)"></div>
+                      </div>
+                      <div class="item__name">Сок апельсиновый</div>
+                      <div class="item__value">1 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-7.png)"></div>
+                      </div>
+                      <div class="item__name">Сок апельсиновый</div>
+                      <div class="item__value">0,25 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-17.png)"></div>
+                      </div>
+                      <div class="item__name">Сок яблочный</div>
+                      <div class="item__value">1,5 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-3.png)"></div>
+                      </div>
+                      <div class="item__name">Сок яблочный</div>
+                      <div class="item__value">1 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-4.png)"></div>
+                      </div>
+                      <div class="item__name">Сок яблочный</div>
+                      <div class="item__value">0.25 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-15.png)"></div>
+                      </div>
+                      <div class="item__name">Сок ананасовый</div>
+                      <div class="item__value">1 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-9.png)"></div>
+                      </div>
+                      <div class="item__name">Сок ананасовый</div>
+                      <div class="item__value">0,25 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-5.png)"></div>
+                      </div>
+                      <div class="item__name">Сок мандариновый</div>
+                      <div class="item__value">1,5 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-6.png)"></div>
+                      </div>
+                      <div class="item__name">Сок мандариновый</div>
+                      <div class="item__value">1  л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-18.png)"></div>
+                      </div>
+                      <div class="item__name">Сок мандариновый</div>
+                      <div class="item__value">0,25 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-16.png)"></div>
+                      </div>
+                      <div class="item__name">Абрикосовый нектар</div>
+                      <div class="item__value">0,25 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-19.png)"></div>
+                      </div>
+                      <div class="item__name">Клубничный нектар</div>
+                      <div class="item__value">0,75 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="juice">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-20.png)"></div>
+                      </div>
+                      <div class="item__name">Грушевый нектар</div>
+                      <div class="item__value">0,75 л</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="dessert">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-21.png)"></div>
+                      </div>
+                      <div class="item__name">Абрикосовые кусочки</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="dessert">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-11.png)"></div>
+                      </div>
+                      <div class="item__name">Ананасовые кусочки</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="dessert">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-12.png)"></div>
+                      </div>
+                      <div class="item__name">Вишневые кусочки</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="dessert">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-22.png)"></div>
+                      </div>
+                      <div class="item__name">Клубничные кусочки</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="dessert">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-10.png)"></div>
+                      </div>
+                      <div class="item__name">Малиновые кусочки</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="dessert">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-14.png)"></div>
+                      </div>
+                      <div class="item__name">Персиковые кусочки</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="dessert">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-13.png)"></div>
+                      </div>
+                      <div class="item__name">Грушевые кусочки</div></a>
+                  </li>
+                  <li><a class="item" href="item-details.html" data-category="dessert">
+                      <div class="item__img-wrap">
+                        <div class="item__img" style="background-image:url(images/content/items/item-8.png)"></div>
+                      </div>
+                      <div class="item__name">Кусочки манго</div></a>
+                  </li>
+                </ul>
+                <div class="btn__wrap hide-desktop"><a class="btn btn-bordered" href="#more">Показать ещё</a></div>
+              </div>
+              <!--catalog-items-->
+            </div>
+          </div>
+        </section>
+        <!--section-default-->
+      </main>
+      <footer class="footer" style="background-image:url(images/content/top_img-1.png);">
+        <div class="container">
+          <div class="footer-inner">
+            <div class="footer-part footer-part-left">
+              <div class="footer-logo__wrap"><a class="footer-logo" href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+              <div class="copyright">© Andros 2019. Продукты из свежих фруктов.</div>
+              <div class="developers">
+                Разработка -
+ <a href="#" target="_blank">BBBro</a>
+              </div>
+            </div>
+            <div class="footer-part footer-part-right">
+              <div class="footer-menu__wrap">
+                <ul class="footer-menu">
+                  <li><a href="about.html">О компании</a><a href="#">Andros Restauration</a></li>
+                  <li><a href="catalog.html">Наши продукты</a>
+                    <ul>
+                      <li><a href="catalog.html#juice">Соки</a></li>
+                      <li><a href="catalog.html#dessert">Десерты</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contacts.html">Контакты</a>
+                    <ul>
+                      <li><a href="tel:8 (903) 537 62 86"> 8 (903) 537 62 86</a></li>
+                      <li><a href="mailto:sales@androsfoods.com">sales@androsfoods.com</a></li>
+                      <li><a href="#">Написать нам</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--footer-inner-->
+        </div>
+        <!--container-->
+      </footer>
+      <!--footer-->
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

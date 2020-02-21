@@ -1,0 +1,339 @@
+
+
+.contacts-list {
+  display:flex;
+  flex-direction:row;
+  margin:0 -1.5rem;
+  flex-wrap:wrap;
+  
+  li {
+    display:block;
+    width:33.33334%;
+    padding:0 1.5rem 3rem;
+  }
+  .contact-one {
+    display:flex;
+    flex-direction:column;
+    min-height:15rem;
+    background:$item-img-bg;
+    padding:2.5rem 3rem;
+    height:100%;
+  }
+  .contact-one__link {
+    display:inline-block;
+    font-size:2.4rem;
+    line-height:1.5;
+    font-weight:bold;
+    color:$green;
+    margin:0 0 1.5rem;
+    transition:color $anim ease;
+  }
+  a.contact-one__link {
+    &:hover {
+      color:$light-green;
+    }
+  }
+  .contact-one__name {
+    display:block;
+    font-size:1.6rem;
+    line-height:1.5;
+    margin:auto 0 0;
+    color:$text-color;
+  }
+  @media screen and (max-width:$table-screen) {
+    margin:0 -1.5rem;
+    padding-top:2rem;
+    
+    li {
+      display:block;
+      width:50%;
+      padding:0 1.5rem 1rem;
+    }
+    .contact-one {
+      min-height:12rem;
+      padding:2.5rem 3rem;
+    }
+    .contact-one__link {
+      font-size:1.6rem;
+      line-height:1.5;
+    }
+    .contact-one__name {
+      font-size:1.2rem;
+      line-height:1.5;
+      margin:auto 0 0;
+    }
+  }
+  @media screen and (max-width:$mobile-screen) {
+    li {
+      width:100%;
+    }
+  }
+}//contact-list
+
+.form__wrap {
+  display:block;
+  width:100%;
+}
+
+.form {
+  
+  &.form-feedback {
+    display:block;
+    width:100%;
+    background:$item-img-bg;
+    padding:6rem 6rem;
+    margin:0 0 8rem;
+    
+    .btn__wrap {
+      padding-top:3rem;
+    }
+  }
+  
+  .form-line {
+    display:flex;
+    flex-direction:row;
+    margin:0 0 3rem;
+    flex-wrap:nowrap;
+    //max-width:90rem;
+    padding-right:30rem;
+  }
+  .form-line__name {
+    display:block;
+    font-size:1.6rem;
+    line-height:1.5;
+    color:$text-color;
+    font-weight:500;
+    width:30rem;
+    padding-right:3rem;
+  }
+  .form-line__label {
+    display:block;
+    margin:0 0 0 auto;
+    width:60rem;
+    
+    .error {
+      .form-input {
+        border-color:$red;
+      }
+    }
+  }
+  .form-label {
+    display:block;
+    width:100%;
+  }
+  .form-input {
+    display:block;
+    width:100%;
+    height:4rem;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:$ff-montserrat;
+    border:.1rem solid $light-green;
+    font-size:1.6rem;
+    line-height:2rem;
+    padding:1rem 1.5rem;
+    transition:border-color $anim ease;
+    
+    &:hover {
+      border-color:$yellow;
+    }
+    &.filled,
+    &:focus {
+      border-color:$green;
+    }
+    &.error {
+      border-color:$red;
+    }
+  }
+  textarea.form-input {
+    min-height:12rem;
+    height:18rem;
+    max-height:56rem;
+    resize:vertical;
+  }
+  .capcha-block {
+    display:inline-block;
+    max-width:100%;
+    
+    img {
+      display:block;
+      max-width:100%;
+    }
+  }
+  
+  @media screen and (max-width:$table-screen) {
+    &.form-feedback {
+      width:100%;
+      padding:2.5rem 2rem;
+      margin:0 0 3rem;
+    
+      .btn__wrap {
+        padding-top:3rem;
+      }
+    }
+  
+    .form-line {
+      margin:0 0 2rem;
+      flex-wrap:wrap;
+      padding-right:0;
+    }
+    .form-line__name {
+      display:block;
+      font-size:1.4rem;
+      line-height:1.5;
+      width:100%;
+      padding-right:0;
+      margin:0 0 .5rem;
+    }
+    .form-line__label {
+      display:block;
+      margin:0 0 0 auto;
+      width:60rem;
+    
+      .error {
+        .form-input {
+          border-color:$red;
+        }
+      }
+    }
+    .form-label {
+      display:block;
+      width:100%;
+    }
+    .form-input {
+      display:block;
+      width:100%;
+      height:4rem;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family:$ff-montserrat;
+      border:.1rem solid $light-green;
+      font-size:1.6rem;
+      line-height:2rem;
+      padding:1rem 1.5rem;
+      transition:border-color $anim ease;
+    
+      &:hover {
+        border-color:$yellow;
+      }
+      &.filled,
+      &:focus {
+        border-color:$green;
+      }
+      &.error {
+        border-color:$red;
+      }
+    }
+    textarea.form-input {
+      min-height:12rem;
+      height:18rem;
+      max-height:56rem;
+      resize:vertical;
+    }
+    .capcha-block {
+      display:inline-block;
+      max-width:100%;
+    }
+    .btn-default {
+      min-width:29.5rem;
+      max-width:100%;
+    }
+  }
+}//form
+
+
+.checkbox-block {
+  display:block;
+  position:relative;
+  padding-left:3rem;
+  min-height:2rem;
+  
+  
+  .checkbox {
+    display:block;
+    position:absolute;
+    top:.1rem;
+    left:0;
+    
+    &:hover {
+      .checkbox__style {
+        border-color:$yellow;
+      }
+    }
+  }
+  input[type=checkbox] {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0;
+  }
+  input[type=checkbox]:checked + .checkbox__style {
+    &:after {
+      opacity:1;
+    }
+  }
+  .checkbox__style {
+    display:block;
+    width:1.6rem;
+    height:1.6rem;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border:.1rem solid $light-green;
+    cursor:pointer;
+    transition:border-color $anim ease;
+    
+    &:after {
+      content:'';
+      display:block;
+      position:absolute;
+      width:1.4rem;
+      height:1rem;
+      border-bottom:.2rem solid $dark;
+      border-left:.2rem solid $dark;
+      transform-origin:50%;
+      top:50%;
+      left:50%;
+      margin-top:-.9rem;
+      margin-left:-.5rem;
+      transform:rotate(-45deg);
+      opacity:0;
+      transition:opacity $anim ease;
+    }
+  }
+  .checkbox__text {
+    display:block;
+    width:100%;
+    font-size:1.4rem;
+    line-height:1.5;
+    color:$text-color;
+    font-weight:500;
+    
+    label,
+    a {
+      display:inline;
+      font-weight:bold;
+      transition:color $anim ease;
+      cursor:pointer;
+      
+      &:hover {
+        color:$light-green;
+      }
+    }
+  }
+  @media screen and (max-width:$table-screen) {
+    .checkbox__text {
+      font-size:1.2rem;
+      padding-top:.2rem;
+    }
+  }
+}//checkbox-block
+
+
+.terms-block {
+  display:block;
+  width:100%;
+  max-width:100.24rem;
+}

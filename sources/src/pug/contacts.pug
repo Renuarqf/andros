@@ -1,0 +1,66 @@
+extends base/_layout
+block head
+    title Contacts
+block page
+    .section-default
+        .container
+            .section__title Контакты
+            .contacts-list
+                li
+                    .contact-one
+                        a(href="tel:8 (903) 537 62 86").contact-one__link 8 (903) 537 62 86
+                        .contact-one__name Контактный телефон
+                li
+                    .contact-one
+                        a(href="mailto:sales@androsfoods.com").contact-one__link sales@androsfoods.com
+                        .contact-one__name Электронная почта
+    section.section-simple
+        .container
+            .green-separator
+            .section__subtitle Обратная связь
+            .form__wrap
+                form.form.form-feedback
+                    .form-line
+                        .form-line__name Ваше имя
+                        .form-line__label
+                            label.form-label
+                                input(type="text" value="").form-input
+                    .form-line
+                        .form-line__name Электронная почта
+                        .form-line__label
+                            label.form-label
+                                input(type="mail" value="" required).form-input
+                    .form-line
+                        .form-line__name Контактный телефон
+                        .form-line__label
+                            label.form-label
+                                input(type="tel" value="").form-input.error
+                    .form-line
+                        .form-line__name Суть запроса
+                        .form-line__label
+                            label.form-label
+                                textarea().form-input
+                    .form-line
+                        .form-line__label
+                            .capcha-block
+                                img( src="images/content/capcha.png" alt="")
+                    .form-line
+                        .form-line__label
+                            .checkbox-block
+                                label.checkbox
+                                    input(type="checkbox")#confirm
+                                    .checkbox__style
+                                .checkbox__text
+                                    label(for="confirm") Нажимая кнопку
+                                    | #{' '}
+                                    | "Отправить запрос" я принимаю условия
+                                    br
+                                    a(href="terms.html") Пользовательского соглашения
+                                    | #{' '}
+                                    | и даю свое согласие на обработку мои персональных данных на условиях и для целей, определенных
+                                    | #{' '}
+                                    a(href="terms.html") Политикой в отношении обработки персональных данных
+                    .form-line
+                        .form-line__label
+                            .btn__wrap
+                                button(type="submit").btn.btn-default Отправить запрос

@@ -1,0 +1,84 @@
+extends base/_layout
+block head
+    title Item details
+block page
+    section.section-simple
+        .section-simple__head-bg(style="background-image:url(images/content/head-img-1.jpg)")
+        .container
+            .inside-block
+                .item-details.stick-parent
+                    .item-details__aside-stick.stick-item
+                        .item-details__aside
+                            .item-details__aside-img(style="background-image:url(images/content/items/item-lg-1.png)")
+                    .item-details__inner
+                        .item-name Сок апельсиновый
+                        .item-value
+                            span.name Объем:
+                            span.value 1 л
+                        .item-description
+                            p Самое лучшее, что может случиться со спелым фруктом - это быть выбранным Андрос для своего сока. 100% натуральный сок, без добавления сахара. Витаминный заряд с ярким вкусом спелых апельсинов. Источник витамина С. Андрос, сила фруктов!
+                        .info-separator
+                        .info-group
+                            .info-group__name Состав
+                            .info-group__details
+                                p Абрикосы 83%, сахар, загуститель: фруктовый пектин, антиоксидант: аскорбиновая кислота, регулятор кислотности: цитрат кальция.
+                        .info-group
+                            .info-group__name Обратите внимание
+                            .info-group__details Несмотря на все наши предосторожности, этот десерт может содержать кусочки косточек.
+                        .info-separator
+                        .info-group
+                            .info-group__name Пищевая ценность на 100 грамм
+                            .info-group__details
+                                .consist-list
+                                    li
+                                        .consist-one
+                                            .consist-one__value 213кДж (50кал)
+                                            .consist-one__name Калории
+                                    li
+                                        .consist-one
+                                            .consist-one__value 0,2г
+                                            .consist-one__name Жиры
+                                    li
+                                        .consist-one
+                                            .consist-one__value 0г
+                                            .consist-one__name Насыщенные жирные кислоты в жирах
+                                    li
+                                        .consist-one
+                                            .consist-one__value 22г
+                                            .consist-one__name Углеводы
+                                    li
+                                        .consist-one
+                                            .consist-one__value 22г
+                                            .consist-one__name Сахар в углеводах
+                                    li
+                                        .consist-one
+                                            .consist-one__value 1,6г
+                                            .consist-one__name Клетчатка
+                                    li
+                                        .consist-one
+                                            .consist-one__value 0,7г
+                                            .consist-one__name Белок
+                                    li
+                                        .consist-one
+                                            .consist-one__value 0г
+                                            .consist-one__name Соль
+                                    li
+                                        .consist-one
+                                            .consist-one__value 12г
+                                            .consist-one__name Витамин C
+                //item-details
+        //container
+    //section-simple
+    section.section-simple
+        .container
+            .green-separator
+            .section__subtitle Другие продукты
+            ul.item-list
+                li
+                    +item(1,'Сок апельсиновый','1,5 л', 'juice')
+                li
+                    +item(2,'Сок апельсиновый','1 л', 'juice')
+                li
+                    +item(7,'Сок апельсиновый','0,25 л', 'juice')
+                li
+                    +item(17,'Сок яблочный','1,5 л', 'juice')

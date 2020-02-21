@@ -1,0 +1,57 @@
+%svg-common {
+	background: url("../images/sprites/main.svg") no-repeat;
+}
+
+.svg-image-clock {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-image-clock-dims {
+	width: 31px;
+	height: 36px;
+}
+
+.svg-image-money,
+.svg-image-money\:regular {
+	@extend %svg-common;
+	background-position: 88.60759493670886% 51.42857142857143%;
+}
+
+.svg-image-money-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-image-money:hover,
+.svg-image-money\:hover {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-image-money-dims:hover,
+.svg-image-money\:hover-dims {
+	width: 22px;
+	height: 22px;
+}
+
+.svg-image-personal {
+	@extend %svg-common;
+	background-position: 27.160493827160494% 97.22222222222223%;
+}
+
+.svg-image-personal-dims {
+	width: 20px;
+	height: 20px;
+}
+
+.svg-image-phone-rounded {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-image-phone-rounded-dims {
+	width: 70px;
+	height: 70px;
+}
+

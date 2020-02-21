@@ -1,0 +1,42 @@
+// Grid
+$width_lg: 1170px;
+$width_md: 991px;
+$width_xs: 767px;
+$width_mob: 500px;
+
+$grid-width: 1170px;
+$grid-gutter: 30px;
+$grid-columns: 12;
+
+//colors
+$base-color: #333;
+$base-bg: #fff;
+$text-color:#333;
+$light-grey:#fbfbfb;
+$item-img-bg:#F9F9F9;
+
+$red:#EE1C25;
+$yellow:#FFDF00;
+$green:#005E2F;
+$light-green:#7FBD0E;
+$dark:#112237;
+$black:#000;
+
+$white:#fff;
+
+$ff-montserrat: 'Montserrat';
+$font-default: $ff-montserrat, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+
+// custom grid
+$full-hd: 1920px;
+$desctop-md: 1680px;
+$desctop-xs: 1280px;
+$table-screen: 1023px;
+$mobile-screen: 767px;
+
+$anim:0.3s;
+
+
+$header-h:8rem;
+$header-h-m:4rem;

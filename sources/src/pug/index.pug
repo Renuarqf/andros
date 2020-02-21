@@ -1,0 +1,111 @@
+extends base/_layout-index
+block head
+    title Main
+block page
+    ul.pagination-screen
+        li
+            a(href="#section-0" data-screen="0" data-section="0").pagination-link.active
+        li
+            a(href="#section-1" data-screen="1" data-section="1").pagination-link
+        li
+            a(href="#section-2" data-screen="2" data-section="2").pagination-link
+        li
+            a(href="#section-3" data-screen="2" data-section="3").pagination-link
+    .next-section-link__wrap
+        a(href="#next-screen").next-section-link
+            svg.icon
+                use(xlink:href="#down-arrow")
+    .screen-page.showing.fix
+        section.section-screen(data-section="0")
+            .main-slider
+                .slide-one
+                    .slide-img(style="background-image:url(images/content/m_img-1.png)").fadeAnim.fade
+                    .container.container-async
+                        .slide-inner
+                            .slide-details
+                                .slide__title.fadeAnim.fadeUp.fade-delay-100 Теперь в России
+                                .slide__text.fadeAnim.fadeUp.fade-delay-300
+                                    p Самое лучшее, что может случиться со спелым фруктом - это быть выбранным Андрос для своих продуктов, которые доступны теперь и в России
+                                .btn__wrap.fadeAnim.fadeUp.fade-delay-500
+                                    a(href="catalog.html").btn.btn-default Смотреть каталог
+                .slide-one
+                    .slide-img(style="background-image:url(images/content/m_img-2.png)").fadeAnim.fade
+                    .container.container-async
+                        .slide-inner
+                            .slide-details
+                                .slide__title.fadeAnim.fadeUp.fade-delay-100 Соки с французских плантаций
+                                .slide__text.fadeAnim.fadeUp.fade-delay-300
+                                    p Самое лучшее, что может случиться со спелым фруктом - это быть выбранным Андрос для своих продуктов, которые доступны теперь и в России
+                                .btn__wrap.fadeAnim.fadeUp.fade-delay-500
+                                    a(href="catalog.html#juice").btn.btn-default Смотреть каталог соков
+                .slide-one
+                    .slide-img(style="background-image:url(images/content/m_img-3.png)").fadeAnim.fade
+                    .container.container-async
+                        .slide-inner
+                            .slide-details
+                                .slide__title.fadeAnim.fadeUp.fade-delay-100 Свежие фруктовые десерты
+                                .slide__text.fadeAnim.fadeUp.fade-delay-300
+                                    p Самое лучшее, что может случиться со спелым фруктом - это быть выбранным Андрос для своих продуктов, которые доступны теперь и в России
+                                .btn__wrap.fadeAnim.fadeUp.fade-delay-500
+                                    a(href="catalog.html#dessert").btn.btn-default Смотреть каталог десертов
+        //section-screen
+    .screen-page
+        section.section-screen(data-section="1")
+            .home-info
+                .home-info__images.fadeAnim.fade
+                    .img-slider
+                        .slide-one
+                            .slide-img(style="background-image:url(images/content/s_img-1.jpg)")
+                        .slide-one
+                            .slide-img(style="background-image:url(images/content/s_img-2.jpg)")
+                        .slide-one
+                            .slide-img(style="background-image:url(images/content/s_img-3.jpg)")
+                .container.container-async
+                    .home-info__inner
+                        .section__details
+                            .section__title.fadeAnim.fadeRight.fade-delay-100 Принципы Андрос
+                            .section__addition.fadeAnim.fadeRight.fade-delay-200 Мы отбираем исключительно те фрукты, которые соответствуют всем нашим требованиям
+                            .section__text.hide-mobile.fadeAnim.fadeRight.fade-delay-500 Наши рецепты ежедневно адаптируются, чтобы гарантировать потребителю, что он всегда получит превосходный вкус фруктов, без красителей, искусственных ароматизаторов и консервантов
+                            .btn__wrap.fadeAnim.fadeRight.fade-delay-700
+                                a(href="about.html").btn.btn-bordered Подробнее о компании
+        //section-screen
+    .screen-page
+        section.section-home(data-section="2")
+            .container.container-async
+                .home-catalog.stick-parent
+                    .section__details.stick-item
+                        .section__title.fadeAnim.fadeLeft.fade-delay-100 Популярные продукты
+                        .section__addition.fadeAnim.fadeLeft.fade-delay-300 С давних пор главная цель Андрос - сделать фрукты доступными для всех
+                        .section__text.fadeAnim.fadeLeft.fade-delay-500 Таким образом, каждый день Андрос делает все возможное, чтобы создать фруктовые продукты, не искажая их вкус и сохраняя их натуральность.
+                        .btn__wrap.hide-mobile.fadeAnim.fadeLeft.fade-delay-700
+                            a(href="catalog.html").btn.btn-bordered Смотреть весь каталог
+                    .home-catalog__inner.fadeAnim.fade
+                        ul.item-list.item-list-half
+                           li
+                               +item(1,'Сок апельсиновый','1,5 л', 'juice')
+                           li
+                               +item(2,'Сок апельсиновый','1 л', 'juice')
+                           li
+                               +item(3,'Сок яблslide-headerочный','1 л', 'juice')
+                           li
+                               +item(4,'Сок яблочный','0,25 л', 'juice')
+                           li
+                               +item(5,'Сок мандариновый','1,5 л', 'juice')
+                           li
+                               +item(6,'Сок мандариновый','1 л', 'juice')
+                        .btn__wrap.hide-desktop
+                            a(href="catalog.html").btn.btn-bordered Смотреть весь каталог
+        //section-default
+
+        section.section-default(data-section="3")
+            .container.container-async
+                .section__details
+                    .section__title.fadeAnim.fadeDown.fade-delay-100 Инстаграм
+                    .section__text.fadeAnim.fadeDown.fade-delay-300 Подписывайтесь на наши обновления в Инстаграм и будьте в курсе всех новинок и событий
+                .gallery__wrap.fadeAnim.fade.fade-delay-100
+                    ul.gallery
+                        - for(var i = 1; i <= 18; i++)
+                            li
+                                a(href="#").gallery-link
+                                    .gallery-link__img(style="background-image:url(images/content/gallery/gal-"+i+".jpg)")
+        //section-default

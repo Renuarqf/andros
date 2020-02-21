@@ -1,0 +1,15 @@
+mixin breadcrumbs(arr,cur)
+    .b-breadcrumbs
+        .container
+            each v in arr
+                a(href="#").b-breadcrumbs__link=v
+            if cur!=''
+                span.b-breadcrumbs__text=cur
+
+mixin item(img, name, value, catagory)
+    a(href="item-details.html" data-category=catagory ? catagory : '').item
+        .item__img-wrap
+            .item__img(style="background-image:url(images/content/items/item-"+img+".png)")
+        .item__name= name
+        if value
+            .item__value= value
